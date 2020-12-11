@@ -10,7 +10,10 @@ canvas.pack()
 frame = tk.Frame(root, bg="white")
 frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
 
-button=tk.Button(root, text="Kliknij mnie",padx=25,pady=10,fg="white",bg="#123D42")
+button=tk.Button(root, text="Kliknij mnie bardzo plis",padx=20,pady=10,fg="white",bg="#123D42")
 button.pack()
+
+button2=tk.Button(root, text="Kliknij mnie także",padx=35,pady=10,fg="white",bg="#122D42")
+button2.pack()
 
 root.mainloop()
