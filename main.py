@@ -1,18 +1,16 @@
-# This is a sample Python script.
+import tkinter as tk
+from tkinter import filedialog, Text
+import os
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+root = tk.Tk()
 
+canvas = tk.Canvas(root, height=700,width=700,bg="#263D42")
+canvas.pack()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    print ("TEST")
-    print("TEST2222")
+frame = tk.Frame(root, bg="white")
+frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
 
+button=tk.Button(root, text="Kliknij mnie",padx=25,pady=10,fg="white",bg="#123D42")
+button.pack()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+root.mainloop()
