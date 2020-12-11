@@ -4,6 +4,13 @@ import os
 
 root = tk.Tk()
 
+if os.path.isfile('save.txt'):
+    with open('save.txt','r') as f:
+        temporary=f.read()
+        temporary2=temporary.split(',')
+        print (temporary2)
+
+
 def robRzeczy():
     label=tk.Label(frame, text="ELOELOELO")
     label.pack()
@@ -23,4 +30,5 @@ button2.pack()
 root.mainloop()
 
 with open('save.txt','w') as f: #generates file save.txt and set write
-    f.write("treść")
+    f.write("treść"+',')
+    f.write("WITAM")
